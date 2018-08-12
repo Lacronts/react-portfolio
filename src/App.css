@@ -1,0 +1,22 @@
+nav{
+  margin: 1.5em 1.5em 0em 1.5em;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+nav ul li a {
+  padding: 1em;
+  color:white;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+nav a{
+  color:white;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+}
+
+header img {
+  display: block;
+  margin: 3em auto 2em;
+}

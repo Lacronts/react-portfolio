@@ -1,0 +1,19 @@
+html, body {
+  text-align: center;
+  background: url(./img/menu-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 100%;
+
+}
+
+p {
+  font-size: 20px;
+  font-family: Athelas, sans-serif;
+}
