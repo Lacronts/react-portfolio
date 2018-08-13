@@ -1,22 +1,38 @@
 import React from 'react';
 import Main from './components/Main'
-import Footer from './components/Footer'
 import {
 Navbar,
-NavbarBrand,
 Nav,
-NavItem
+NavItem,
+NavbarToggler,
+Collapse
 } from 'reactstrap'
 import { Link } from 'react-router-dom';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+  super(props);
+
+  this.toggle = this.toggle.bind(this);
+  this.state = {
+    isOpen: false
+  };
+}
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
 
  render() {
    return (
      <div>
        <Navbar color="dark" expand="md">
-         <NavbarBrand><Link to='/'><code>{'<Vladimir Gevak/>'}</code></Link></NavbarBrand>
+         <Link to='/'><code>{'<Vladimir Gevak/>'}</code></Link>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
            <Nav className="ml-auto" navbar>
              <NavItem>
                <Link to='/aboutme'>About Me</Link>
@@ -28,9 +44,9 @@ class App extends React.Component {
                <Link to="/contacts">Contact</Link>
              </NavItem>
            </Nav>
+          </Collapse>
        </Navbar>
     <Main/>
-    <Footer/>
   </div>
    );
  }

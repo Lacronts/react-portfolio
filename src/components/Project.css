@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.nav-link{
+  color:white!important;
+}
 .active {
   opacity: 0.8;
 }
@@ -27,4 +29,10 @@ div img{
 .card{
   background-color: #343a40!important;
   color:white!important;
+  margin:10px;
+}
+
+.card-body{
+  margin: 0!important;
+  padding:0!important;
 }

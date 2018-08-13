@@ -4,8 +4,8 @@ div img {
 }
 .profile{
   border-radius: 50%;
-  width: 35%;
-  height: 35%;
+  width: 400px;
+  height:400px;
 }
 .container{
   text-align: center;

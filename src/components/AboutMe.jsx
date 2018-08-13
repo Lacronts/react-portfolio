@@ -4,8 +4,8 @@ import './AboutMe.css'
 
 const AboutMe= (props) => {
   return (
-  <div class='container'>
-    <img class="passport" src="./img/passport.jpg" alt="it's me guys" />
+  <div className='container'>
+    <img className="passport" src="./img/passport.jpg" alt="it's me guys" />
       <Jumbotron className='about'>
         <h1>ABOUT ME</h1>
         <hr className="star-light"></hr>

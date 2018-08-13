@@ -7,7 +7,7 @@ import './LandingPage.css'
 export default class Main extends React.Component{
     render() {
       return(
-        <div class="container">
+        <div className="container">
           <img alt="me" className="profile" src='./img/photo.png'/>
           <Jumbotron>
               <h1>JUNIOR WEB DEVELOPER</h1>
